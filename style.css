@@ -1,0 +1,217 @@
+ body {
+   background-color: #DCDCDC;
+ }
+
+ .Foto-ouders {
+   size: 1px;
+   width: 800px
+ }
+
+ .Foto-beker {
+   size: 1px;
+   width: 400px;
+   float: right;
+   margin-right: 120px;
+   margin-top: 120px;
+   border-radius: 5px;
+   border-width: 20px;
+ }
+
+ h1 {
+   font-family: 'Franklin Gothic Medium';
+   text-align: center;
+ }
+
+ h2 {
+   font-family: 'Franklin Gothic Medium';
+ }
+
+ h3 {
+   font-family: 'Franklin Gothic Medium';
+ }
+
+ h4 {
+   font-family: 'Franklin Gothic Medium';
+ }
+
+ h1 {
+   color: #191970;
+ }
+
+ nav {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   width: 200px;
+   background-color: #6A5ACD;
+   font-family: 'Franklin Gothic Medium';
+   border: 3px solid #191970;
+ }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  text-align: center;
+  border-bottom: 3px solid #191970;
+}
+
+nav ul li:last-child {
+  border-bottom: none;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  background-color: #483D8B; /* DarkSlateBlue */
+  color: white;
+}
+
+nav ul li a:hover:not(.active) {
+  background-color: #87CEFA; /* LightSkyBlue */
+  color: black;
+}
+
+ .sidenav a {
+   position: absolute;
+   right: -95px;
+   transition: 0.3s;
+   padding: 15px;
+   width: 100px;
+   text-decoration: none;
+   font-size: 20px;
+   color: white;
+   border-radius: 5px 0 0 5px;
+   text-align: right;
+ }
+
+ .sidenav a:hover {
+   right: 0;
+ }
+
+ .cer {
+   top: 20px;
+   background-color: #191970;
+ }
+
+ .regulations {
+   top: 80px;
+   background-color: #191970;
+ }
+
+ .learn {
+   top: 140px;
+   background-color: #191970;
+ }
+
+ .studie {
+   top: 200px;
+   background-color: #191970;
+ }
+
+ .git {
+   top: 260px;
+   background-color: #191970;
+ }
+
+ img {
+   border: 3px solid #6A5ACD;
+ }
+
+ .waarom {
+   text-align: center;
+   font-size: 20px;
+   width: 700px;
+   margin-left: 110px;
+   margin-top: 60px;
+   background-color: #FF7F50;
+   padding: 10px;
+   background: #FF4500;
+   border-radius: 5px;
+   position: left;
+ }
+
+ .daarom {
+   text-align: left;
+   font-size: 17px;
+   width: 700px;
+   margin-left: 110px;
+   margin-top: -18px;
+   background-color: #FF7F50;
+   padding: 10px;
+   background: #FF7F50;
+   border-radius: 5px;
+   position: left;
+ }
+
+ .waarom2 {
+   text-align: center;
+   font-size: 20px;
+   width: 700px;
+   margin-left: 110px;
+   margin-top: 100px;
+   background-color: #FF7F50;
+   padding: 10px;
+   background: #FF4500;
+   border-radius: 5px;
+   position: left;
+ }
+
+ .daarom2 {
+   text-align: left;
+   font-size: 17px;
+   width: 700px;
+   margin-left: 110px;
+   margin-top: -18px;
+   background-color: #FF7F50;
+   padding: 10px;
+   background: #FF7F50;
+   border-radius: 5px;
+   position: left;
+ }
+
+ .lijstje {
+   list-style-type: disc;
+   text-align: left;
+   width: 550px;
+   margin-left: 20px;
+   margin-top: 5px;
+   padding: 5px;
+   background-color: #FF7F50;
+
+ }
+
+ .vraagstudie {
+   text-align: center;
+   font-size: 20px;
+   width: 700px;
+   margin-left: 110px;
+   margin-top: 100px;
+   background-color: #FF7F50;
+   padding: 10px;
+   background: #FF4500;
+   border-radius: 5px;
+   position: left;
+ }
+
+ .antwoordstudie {
+   text-align: left;
+   font-size: 17px;
+   width: 700px;
+   margin-left: 110px;
+   margin-top: -18px;
+   background-color: #FF7F50;
+   padding: 10px;
+   background: #FF7F50;
+   border-radius: 5px;
+   position: left;
+ }
+
