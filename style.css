@@ -2,7 +2,13 @@
    background-color: #87CEFA;
  }
 
- .Foto-beker {
+ h1 {
+   font-family: 'Franklin Gothic Medium';
+   text-align: center;
+   color: #191970;
+ }
+
+ .foto-beker {
    size: 1px;
    width: 400px;
    float: right;
@@ -10,34 +16,37 @@
    margin-top: 60px;
    border-radius: 5px;
    border-width: 20px;
+   border: 20px solid #6A5ACD;
  }
 
- h1 {
-   font-family: 'Franklin Gothic Medium';
-   text-align: center;
+ .foto-bios {
+   size: 1px;
+   width: 400px;
+   float: right;
+   margin-right: 120px;
+   margin-top: -140px;
+   border-radius: 5px;
+   border-width: 20px;
+   border: 20px solid #6A5ACD;
  }
 
- h2 {
-   font-family: 'Franklin Gothic Medium';
- }
-
- h3 {
-   font-family: 'Franklin Gothic Medium';
- }
-
+ h2,
+ h3,
  h4 {
    font-family: 'Franklin Gothic Medium';
+   color: black;
  }
 
- h1 {
-   color: #191970;
+ p {
+   font-family: 'Franklin Gothic Medium';
+   color: black;
  }
 
  nav {
    list-style-type: none;
-   margin: 0;
+   max-width: fit-content;
+   margin-top: -72px;
    padding: 0;
-   width: 200px;
    background-color: #6A5ACD;
    font-family: 'Franklin Gothic Medium';
    border: 3px solid #191970;
@@ -47,21 +56,23 @@
    list-style-type: none;
    margin: 0;
    padding: 0;
+   overflow: hidden;
+ }
+
+ li {
+   border-left: #191970;
  }
 
  nav ul li {
+   float: left;
    text-align: center;
-   border-bottom: 3px solid #191970;
- }
-
- nav ul li:last-child {
-   border-bottom: none;
  }
 
  nav ul li a {
    display: block;
    color: white;
-   padding: 12px 16px;
+   text-align: center;
+   padding: 14px 16px;
    text-decoration: none;
  }
 
@@ -75,12 +86,13 @@
    color: black;
  }
 
+
  .sidenav a {
    position: absolute;
    right: -95px;
    transition: 0.3s;
    padding: 15px;
-   width: 100px;
+   width: 90px;
    text-decoration: none;
    font-size: 20px;
    color: white;
@@ -122,9 +134,15 @@
    font-family: 'Franklin Gothic Medium';
  }
 
- img {
-   border: 3px solid #6A5ACD;
+
+ footer {
+   text-align: left;
+   margin-top: 200px;
+   padding: 10px;
+   background-color: #aee1fc;
+   color: black;
  }
+
 
  .waarom {
    text-align: center;
@@ -132,9 +150,8 @@
    width: 700px;
    margin-left: 110px;
    margin-top: 60px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #FF4500;
+   background: #6A5ACD;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    border-bottom-left-radius: 0px;
@@ -148,9 +165,8 @@
    width: 700px;
    margin-left: 110px;
    margin-top: -18px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #DCDCDC;
+   background: #F8F8FF;
    border-top-left-radius: 0px;
    border-top-right-radius: 0px;
    border-bottom-left-radius: 5px;
@@ -164,9 +180,8 @@
    width: 700px;
    margin-left: 110px;
    margin-top: 100px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #FF4500;
+   background: #6A5ACD;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    border-bottom-left-radius: 0px;
@@ -180,9 +195,8 @@
    width: 700px;
    margin-left: 110px;
    margin-top: -18px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #DCDCDC;
+   background: #F8F8FF;
    border-top-left-radius: 0px;
    border-top-right-radius: 0px;
    border-bottom-left-radius: 5px;
@@ -193,11 +207,10 @@
  .lijstje {
    list-style-type: disc;
    text-align: left;
-   width:  240px;
+   width: 240px;
    margin-left: 20px;
    margin-top: 5px;
    padding: 5px;
-   background-color: #DCDCDC;
 
  }
 
@@ -207,9 +220,8 @@
    width: 700px;
    margin-left: 110px;
    margin-top: 100px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #FF4500;
+   background: #6A5ACD;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    border-bottom-left-radius: 0px;
@@ -223,9 +235,8 @@
    width: 700px;
    margin-left: 110px;
    margin-top: -18px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #DCDCDC;
+   background: #F8F8FF;
    border-top-left-radius: 0px;
    border-top-right-radius: 0px;
    border-bottom-left-radius: 5px;
@@ -233,15 +244,9 @@
    position: left;
  }
 
- .foto-hz {
-   border: 0px;
-   width: 200px;
-   margin-top: 240px;
- }
-
  .Foto-ouders {
    display: block;
-   margin: -130px auto;
+   margin: 60px auto;
    border-radius: 5px;
    width: 800px;
    border: 20px solid #6A5ACD;
@@ -253,10 +258,9 @@
    width: 1000px;
    margin-left: 240px;
    margin-right: 500px;
-   margin-top: 190px;
-   background-color: #DCDCDC;
+   margin-top: 60px;
    padding: 10px;
-   background: #FF4500;
+   background: #6A5ACD;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    border-bottom-left-radius: 0px;
@@ -270,9 +274,8 @@
    width: 1000px;
    margin-left: 240px;
    margin-top: -17px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #DCDCDC;
+   background: #F8F8FF;
    border-radius: 0px;
    position: left;
  }
@@ -283,9 +286,8 @@
    width: 1000px;
    margin-left: 240px;
    margin-top: -17px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #DCDCDC;
+   background: #F8F8FF;
    border-radius: 0px;
    position: left;
  }
@@ -296,9 +298,8 @@
    width: 1000px;
    margin-left: 240px;
    margin-top: -17px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #DCDCDC;
+   background: #F8F8FF;
    border-radius: 0px;
    position: left;
  }
@@ -309,9 +310,8 @@
    width: 1000px;
    margin-left: 240px;
    margin-top: -17px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #DCDCDC;
+   background: #F8F8FF;
    border-radius: 0px;
    position: left;
  }
@@ -322,9 +322,8 @@
    width: 1000px;
    margin-left: 240px;
    margin-top: -17px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #DCDCDC;
+   background: #F8F8FF;
    border-radius: 0px;
    position: left;
  }
@@ -335,9 +334,8 @@
    width: 1000px;
    margin-left: 240px;
    margin-top: -17px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #DCDCDC;
+   background: #F8F8FF;
    border-top-left-radius: 0px;
    border-top-right-radius: 0px;
    border-bottom-left-radius: 5px;
@@ -359,15 +357,13 @@
    width: 1000px;
    margin-left: 240px;
    margin-right: 500px;
-   margin-top: 50px;
-   background-color: #DCDCDC;
+   margin-top: 40px;
    padding: 10px;
-   background: #D3D3D3;
+   background: #6A5ACD;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    border-bottom-left-radius: 0px;
    border-bottom-right-radius: 0px;
-   position: left;
  }
 
  .faq2 {
@@ -377,14 +373,12 @@
    margin-left: 240px;
    margin-right: 500px;
    margin-top: 40px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #D3D3D3;
+   background: #6A5ACD;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    border-bottom-left-radius: 0px;
    border-bottom-right-radius: 0px;
-   position: left;
  }
 
  .faq3 {
@@ -394,14 +388,12 @@
    margin-left: 240px;
    margin-right: 500px;
    margin-top: 40px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #D3D3D3;
+   background: #6A5ACD;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    border-bottom-left-radius: 0px;
    border-bottom-right-radius: 0px;
-   position: left;
  }
 
  .faq4 {
@@ -411,14 +403,12 @@
    margin-left: 240px;
    margin-right: 500px;
    margin-top: 40px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #D3D3D3;
+   background: #6A5ACD;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    border-bottom-left-radius: 0px;
    border-bottom-right-radius: 0px;
-   position: left;
  }
 
  .faq5 {
@@ -428,14 +418,12 @@
    margin-left: 240px;
    margin-right: 500px;
    margin-top: 40px;
-   background-color: #DCDCDC;
    padding: 10px;
-   background: #D3D3D3;
+   background: #6A5ACD;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    border-bottom-left-radius: 0px;
    border-bottom-right-radius: 0px;
-   position: left;
  }
 
  .ans1 {
@@ -444,76 +432,115 @@
    width: 1000px;
    margin-left: 240px;
    margin-top: -17px;
-   background-color: #DCDCDC;
    padding: 10px;
    background: #F8F8FF;
    border-top-left-radius: 0px;
    border-top-right-radius: 0px;
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
-   position: left;
  }
 
  .ans2 {
-     text-align: left;
+   text-align: left;
    font-size: 17px;
    width: 1000px;
    margin-left: 240px;
    margin-top: -17px;
-   background-color: #DCDCDC;
    padding: 10px;
    background: #F8F8FF;
    border-top-left-radius: 0px;
    border-top-right-radius: 0px;
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
-   position: left;
  }
 
  .ans3 {
-     text-align: left;
+   text-align: left;
    font-size: 17px;
    width: 1000px;
    margin-left: 240px;
    margin-top: -17px;
-   background-color: #DCDCDC;
    padding: 10px;
    background: #F8F8FF;
    border-top-left-radius: 0px;
    border-top-right-radius: 0px;
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
-   position: left;
  }
 
  .ans4 {
-     text-align: left;
+   text-align: left;
    font-size: 17px;
    width: 1000px;
    margin-left: 240px;
    margin-top: -17px;
-   background-color: #DCDCDC;
    padding: 10px;
    background: #F8F8FF;
    border-top-left-radius: 0px;
    border-top-right-radius: 0px;
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
-   position: left;
  }
 
  .ans5 {
-     text-align: left;
+   text-align: left;
    font-size: 17px;
    width: 1000px;
    margin-left: 240px;
    margin-top: -17px;
-   background-color: #DCDCDC;
    padding: 10px;
    background: #F8F8FF;
    border-top-left-radius: 0px;
    border-top-right-radius: 0px;
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
-   position: left;
+ }
+
+
+ .dashboardtable {
+   position: relative;
+   right: -60px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background-color: aliceblue;
+   text-align: left;
+   border-style: double;
+   border-collapse: separate;
+   margin-top: 80px;
+   padding: 10px;
+ }
+
+ .dashboardtable th,
+ .dashboardtable td {
+   padding: 8px 12px;
+   border: 1px solid #6A5ACD;
+   border-collapse: collapse;
+ }
+
+ .dashboardtable2 {
+   position: relative;
+   margin-bottom: 10px;
+   right: -60px;
+   top: -20px;
+   font-family: 'Franklin Gothic Medium';
+   background-color: aliceblue;
+   text-align: left;
+   border-style: double;
+   border-collapse: separate;
+   margin-top: -7px;
+   padding: 10px;
+ }
+
+ .dashboardtable2 th,
+ .dashboardtable2 td {
+   padding: 8px 12px;
+   border: 1px solid #6A5ACD;
+   border-collapse: collapse;
+ }
+
+ .dashboardtable,
+ .dashboardtable2 {
+   margin-left: 80px;
+   width: 80%;
+   transform: scale(0.8);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
