@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>homepage</title>
+  <title>Dashboard pagina</title>
+  <meta content="Pagina met een tabel waarin alle info over komende opdrachten en toetsen te vinden is dit schooljaar, met bijbehorende variabelen zoals cijfers, datums en ec.">
 </head>
 
 <body>
@@ -14,9 +15,9 @@
 
   <nav>
     <ul class="menu">
-      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="profile.html">Profiel</a></li>
-      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="blog.html">Blog</a></li>
     </ul>
@@ -33,7 +34,6 @@
 
   <div style="margin-right:80px;"></div>
 
-
   <div class="sidebar" style="display:none" id="mysidebar">
     <button onclick="close" class="bar-item-groot">Side menu &times;</button>
     <a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f">CER</a>
@@ -43,6 +43,14 @@
     <a href="https://hz.osiris-student.nl/voortgang">Studievoortgang</a>
     <a href="https://github.com/HZ-HBO-ICT">Github</a>
   </div>
+
+
+  <p class="legenda1"> - Rood = slecht cijfer</p>
+  <p class="legenda2"> - Oranje = gemiddeld cijfer</p>
+  <p class="legenda3"> - Groen = goed cijfer</p>
+
+  <p class="toetsen">Overzicht opdrachten en toetsen</p>
+
   <table class="dashboardtable" border="1">
     <tr>
       <th colspan="1">Kwartaal</th>
@@ -55,22 +63,24 @@
     </tr>
 
     <tr>
-      <td rowspan="3">1</td> <!--kwartaal-->
-      <td>Program- & Career Orientation (PCO) CU75001V3</td> <!--course-->
-      <td>Poster Presentation/ Website Assesment</td> <!--toets-->
-      <td>2,5</td> <!--ec-->
-      <td></td>
-      <td></td>
+      <td rowspan="3">1</td>
+      <td>Program- & Career Orientation (PCO) CU75001V3</td>
+      <td>Poster Presentation/ Website Assesment</td>
+      <td>2,5</td>
+      <td>10-10-2025</td>
+      <td class="finished">10</td>
       <td></td>
     </tr>
+
     <tr>
-      <td>Computer Science Basics (CSB) CU75002V2</td> <!--course-->
-      <td>Written Test</td> <!--toets-->
-      <td>5</td> <!--ec-->
+      <td>Computer Science Basics (CSB) CU75002V2</td>
+      <td>Written Test</td>
+      <td>5</td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
+
     <tr>
       <td>Programming Basics (PBA) CU75003V1</td>
       <td>Case study exam</td>
@@ -79,31 +89,38 @@
       <td></td>
       <td></td>
     </tr>
+
     <tr>
-      <td rowspan="2">2</td> <!--kwartaal-->
-      <td rowspan="2">Object-Oriented Programming (OOP) CU75004V1</td> <!--course-->
-      <td>Presentation</td> <!--toets-->
-      <td>5</td> <!--ec-->
+      <td rowspan="2">2</td>
+      <td rowspan="2">Object-Oriented Programming (OOP) CU75004V1</td>
+      <td>Presentation</td>
+      <td>5</td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
 
     <tr>
-      <td>Written Test</td> <!--toets-->
-      <td>5</td> <!--ec-->
+      <td>Written Test</td>
+      <td>5</td>
       <td></td>
       <td></td>
       <td></td>
-
-
-
+    </tr>
 
     <tr>
-      <td rowspan="4">3</td> <!--kwartaal-->
-      <td rowspan="3">Framework Project 1 CU75080V3</td> <!--course-->
-      <td>On-site Case Study Exam</td> <!--toets-->
-      <td>5</td> <!--ec-->
+      <td rowspan="4">3</td>
+      <td rowspan="3">Framework Project 1 CU75080V3</td>
+      <td>On-site Case Study Exam</td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Group Presentation On Project Result</td>
+      <td>2,5</td>
       <td></td>
       <td></td>
       <td></td>
@@ -111,57 +128,52 @@
     </tr>
 
     <tr>
-      <td>Group Presentation On Project Result</td> <!--toets-->
-      <td>2,5</td> <!--ec-->
+      <td>Group Portfolio With Individual Elements On Requirements</td>
+      <td>2,5</td>
       <td></td>
       <td></td>
       <td></td>
 
     </tr>
-    <tr>
-      <td>Group Portfolio With Individual Elements On Requirements</td> <!--toets-->
-      <td>2,5</td> <!--ec-->
-      <td></td>
-      <td></td>
-      <td></td>
 
-    </tr>
     <tr>
-      <td>Business Understanding Basics CU75081V1</td> <!--course-->
-      <td>Video Assignment</td> <!--toets-->
-      <td>2,5</td> <!--ec-->
-      <td></td>
-      <td></td>
-      <td></td>
-
-    </tr>
-    <tr>
-      <td rowspan="3">4</td> <!--kwartaal-->
-      <td rowspan="3">Framework Project 2 CU75011V4</td> <!--course-->
-      <td>Final Delivery</td> <!--toets-->
+      <td>Business Understanding Basics CU75081V1</td>
+      <td>Video Assignment</td>
       <td>2,5</td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
+
     <tr>
-      <td>Individual Assesment</td> <!--toets-->
-      <td>2,5</td> <!--ec-->
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>IT Development Portfolio</td> <!--toets-->
-      <td>5</td> <!--ec-->
+      <td rowspan="3">4</td>
+      <td rowspan="3">Framework Project 2 CU75011V4</td>
+      <td>Final Delivery</td>
+      <td>2,5</td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
 
+    <tr>
+      <td>Individual Assesment</td>
+      <td>2,5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
 
+    <tr>
+      <td>IT Development Portfolio</td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </table>
 
+
+  <p class="overigen">Overzicht overigen</p>
   <table class="dashboardtable2" border="1">
     <tr>
       <th colspan="1">Kwartaal</th>
@@ -173,8 +185,8 @@
       <th>Herkansing</th>
     </tr>
     <tr>
-      <td>Year Round</td> <!--kwartaal-->
-      <td>Personal Proffesional Development Exploration CU75068V3</td> <!--course-->
+      <td>Year Round</td>
+      <td>Personal Proffesional Development Exploration CU75068V3</td>
       <td>Criterium Focused Interview</td>
       <td>12,5</td>
       <td></td>
@@ -202,11 +214,38 @@
       <td></td>
     </tr>
   </table>
-  </head>
+
+
+  <table class="ectable">
+    <tr>
+      <th colspan="2">EC</th>
+    </tr>
+
+    <tr>
+      <td>Benodigde EC</td>
+      <td class="ecgood">45/60 EC</td>
+    </tr>
+
+    <tr>
+      <td>Behaalde EC</td>
+      <td class="ecbad">0/60 EC</td>
+    </tr>
+  </table>
+
+
+
+  </table>
+
 
   <footer>
-    <p>Github:<br>
-      <a href="https://github.com/Theumus" target="_blank">github.com</a></p>
+    <div class="links">
+      <p>Github:<br>
+        <a href="https://github.com/Theumus" target="_blank">github.com</a>
+      <p>Letterboxd:<br>
+        <a href="https://letterboxd.com/theumus" target="_blank">letterboxd.com</a>
+    </div>
+    <img src="foto.hz.png" alt="Een foto van het HZ logo">
+
   </footer>
 
 </body>

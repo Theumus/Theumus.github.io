@@ -1,36 +1,18 @@
  body {
-   background-color: #87CEFA;
+   background-color: #DCDCDC;
  }
 
  h1 {
-   font-family: 'Franklin Gothic Medium';
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    text-align: center;
-   color: #191970;
+   color: black;
  }
 
- .foto-beker {
-   size: 1px;
-   width: 400px;
-   float: right;
-   margin-right: 120px;
-   margin-top: 60px;
-   border-radius: 5px;
-   border-width: 20px;
-   border: 20px solid #6A5ACD;
+ h2 {
+   color: whitesmoke;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 
- .foto-bios {
-   size: 1px;
-   width: 400px;
-   float: right;
-   margin-right: 120px;
-   margin-top: -140px;
-   border-radius: 5px;
-   border-width: 20px;
-   border: 20px solid #6A5ACD;
- }
-
- h2,
  h3,
  h4 {
    font-family: 'Franklin Gothic Medium';
@@ -42,6 +24,9 @@
    color: black;
  }
 
+
+
+ /* NAV BAR */
  nav {
    list-style-type: none;
    max-width: fit-content;
@@ -49,7 +34,8 @@
    padding: 0;
    background-color: #6A5ACD;
    font-family: 'Franklin Gothic Medium';
-   border: 3px solid #191970;
+   border: 2px solid #191970;
+   position: fixed;
  }
 
  nav ul {
@@ -57,36 +43,46 @@
    margin: 0;
    padding: 0;
    overflow: hidden;
+   display: flex;
  }
 
- li {
-   border-left: #191970;
+ nav li {
+   border: 1px #191970;
  }
+
 
  nav ul li {
    float: left;
    text-align: center;
+   border-right: none;
+   border-right: 2px solid #191970;
+ }
+
+ ul li:last-child {
+   border-right: none;
  }
 
  nav ul li a {
    display: block;
    color: white;
    text-align: center;
-   padding: 14px 16px;
+   padding: 14px 20px;
    text-decoration: none;
  }
 
  nav ul li a.active {
    background-color: #483D8B;
-   color: white;
+   font-weight: bold;
  }
 
- nav ul li a:hover:not(.active) {
+ nav ul li a:hover {
    background-color: #a1d8f9;
    color: black;
  }
 
 
+
+ /* SIDE NAV */
  .sidenav a {
    position: absolute;
    right: -95px;
@@ -135,42 +131,70 @@
  }
 
 
+
+ /* FOOTER */
  footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
    text-align: left;
-   margin-top: 200px;
    padding: 10px;
    background-color: #aee1fc;
    color: black;
  }
 
+ footer img {
+   width: 250px;
+   height: auto;
+ }
+
+ footer .links {
+   float: left;
+ }
+
+
+
+ /* HOME PAGINA */
+ .foto-beker {
+   size: 1px;
+   width: 400px;
+   float: right;
+   margin-right: 120px;
+   margin-top: 18px;
+   border-radius: 5px;
+   border-width: 20px;
+   border: 20px solid #6A5ACD;
+ }
+
+ .foto-bios {
+   size: 1px;
+   width: 400px;
+   left: 62.8%;
+   margin-top: -280px;
+   border-radius: 5px;
+   border-width: 20px;
+   border: 20px solid #6A5ACD;
+   position: relative;
+   display: inline-flex;
+ }
+
+ .waaromdaarom {
+margin-top: -40px;
+margin-bottom: 60px;
+ }
 
  .waarom {
    text-align: center;
    font-size: 20px;
    width: 700px;
    margin-left: 110px;
-   margin-top: 60px;
+   margin-top: 40px;
    padding: 10px;
    background: #6A5ACD;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    border-bottom-left-radius: 0px;
    border-bottom-right-radius: 0px;
-   position: left;
- }
-
- .daarom {
-   text-align: left;
-   font-size: 17px;
-   width: 700px;
-   margin-left: 110px;
-   margin-top: -18px;
-   padding: 10px;
-   background: #F8F8FF;
-   border-top-left-radius: 0px;
-   border-top-right-radius: 0px;
-   border-bottom-left-radius: 5px;
-   border-bottom-right-radius: 5px;
    position: left;
  }
 
@@ -179,7 +203,7 @@
    font-size: 20px;
    width: 700px;
    margin-left: 110px;
-   margin-top: 100px;
+   margin-top: 200px;
    padding: 10px;
    background: #6A5ACD;
    border-top-left-radius: 5px;
@@ -189,6 +213,7 @@
    position: left;
  }
 
+ .daarom,
  .daarom2 {
    text-align: left;
    font-size: 17px;
@@ -211,15 +236,15 @@
    margin-left: 20px;
    margin-top: 5px;
    padding: 5px;
-
  }
+
 
  .vraagstudie {
    text-align: center;
    font-size: 20px;
    width: 700px;
    margin-left: 110px;
-   margin-top: 100px;
+   margin-top: -200px;
    padding: 10px;
    background: #6A5ACD;
    border-top-left-radius: 5px;
@@ -244,6 +269,9 @@
    position: left;
  }
 
+
+
+ /* PROFIEL PAGINA */
  .Foto-ouders {
    display: block;
    margin: 60px auto;
@@ -268,54 +296,10 @@
    position: left;
  }
 
- .ik1 {
-   text-align: left;
-   font-size: 17px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-top: -17px;
-   padding: 10px;
-   background: #F8F8FF;
-   border-radius: 0px;
-   position: left;
- }
-
- .ik2 {
-   text-align: left;
-   font-size: 17px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-top: -17px;
-   padding: 10px;
-   background: #F8F8FF;
-   border-radius: 0px;
-   position: left;
- }
-
- .ik3 {
-   text-align: left;
-   font-size: 17px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-top: -17px;
-   padding: 10px;
-   background: #F8F8FF;
-   border-radius: 0px;
-   position: left;
- }
-
- .ik4 {
-   text-align: left;
-   font-size: 17px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-top: -17px;
-   padding: 10px;
-   background: #F8F8FF;
-   border-radius: 0px;
-   position: left;
- }
-
+ .ik1,
+ .ik2,
+ .ik3,
+ .ik4,
  .ik5 {
    text-align: left;
    font-size: 17px;
@@ -351,66 +335,13 @@
    border: 20px solid #6A5ACD;
  }
 
- .faq1 {
-   text-align: center;
-   font-size: 20px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-right: 500px;
-   margin-top: 40px;
-   padding: 10px;
-   background: #6A5ACD;
-   border-top-left-radius: 5px;
-   border-top-right-radius: 5px;
-   border-bottom-left-radius: 0px;
-   border-bottom-right-radius: 0px;
- }
 
- .faq2 {
-   text-align: center;
-   font-size: 20px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-right: 500px;
-   margin-top: 40px;
-   padding: 10px;
-   background: #6A5ACD;
-   border-top-left-radius: 5px;
-   border-top-right-radius: 5px;
-   border-bottom-left-radius: 0px;
-   border-bottom-right-radius: 0px;
- }
 
- .faq3 {
-   text-align: center;
-   font-size: 20px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-right: 500px;
-   margin-top: 40px;
-   padding: 10px;
-   background: #6A5ACD;
-   border-top-left-radius: 5px;
-   border-top-right-radius: 5px;
-   border-bottom-left-radius: 0px;
-   border-bottom-right-radius: 0px;
- }
-
- .faq4 {
-   text-align: center;
-   font-size: 20px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-right: 500px;
-   margin-top: 40px;
-   padding: 10px;
-   background: #6A5ACD;
-   border-top-left-radius: 5px;
-   border-top-right-radius: 5px;
-   border-bottom-left-radius: 0px;
-   border-bottom-right-radius: 0px;
- }
-
+ /* FAQ PAGINA */
+ .faq1,
+ .faq2,
+ .faq3,
+ .faq4,
  .faq5 {
    text-align: center;
    font-size: 20px;
@@ -426,62 +357,10 @@
    border-bottom-right-radius: 0px;
  }
 
- .ans1 {
-   text-align: left;
-   font-size: 17px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-top: -17px;
-   padding: 10px;
-   background: #F8F8FF;
-   border-top-left-radius: 0px;
-   border-top-right-radius: 0px;
-   border-bottom-left-radius: 5px;
-   border-bottom-right-radius: 5px;
- }
-
- .ans2 {
-   text-align: left;
-   font-size: 17px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-top: -17px;
-   padding: 10px;
-   background: #F8F8FF;
-   border-top-left-radius: 0px;
-   border-top-right-radius: 0px;
-   border-bottom-left-radius: 5px;
-   border-bottom-right-radius: 5px;
- }
-
- .ans3 {
-   text-align: left;
-   font-size: 17px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-top: -17px;
-   padding: 10px;
-   background: #F8F8FF;
-   border-top-left-radius: 0px;
-   border-top-right-radius: 0px;
-   border-bottom-left-radius: 5px;
-   border-bottom-right-radius: 5px;
- }
-
- .ans4 {
-   text-align: left;
-   font-size: 17px;
-   width: 1000px;
-   margin-left: 240px;
-   margin-top: -17px;
-   padding: 10px;
-   background: #F8F8FF;
-   border-top-left-radius: 0px;
-   border-top-right-radius: 0px;
-   border-bottom-left-radius: 5px;
-   border-bottom-right-radius: 5px;
- }
-
+ .ans1,
+ .ans2,
+ .ans3,
+ .ans4,
  .ans5 {
    text-align: left;
    font-size: 17px;
@@ -497,50 +376,376 @@
  }
 
 
+
+ /* DASHBOARD PAGINA */
+ .toetsen {
+   font-size: 20px;
+   text-align: center;
+   margin-top: 20px;
+   color: #191970;
+ }
+
+ .overigen {
+   font-size: 20px;
+   margin-top: 60px;
+   text-align: center;
+   color: #191970;
+ }
+
  .dashboardtable {
-   position: relative;
-   right: -60px;
+   position: static;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   background-color: aliceblue;
+   background-color: #F8F8FF;
    text-align: left;
-   border-style: double;
-   border-collapse: separate;
-   margin-top: 80px;
+   border-collapse: collapse;
+   margin-top: 5px;
    padding: 10px;
  }
+
+ .finished,
+ .ecgood {
+   color: #00FA9A;
+ }
+
+ .ecbad {
+   color: red;
+ }
+
+ .legenda1 {
+   color: red;
+   font-size: 15px;
+   text-align: left;
+   margin-top: 40px;
+ }
+
+ .legenda2 {
+   color: orange;
+   font-size: 15px;
+   text-align: left;
+ }
+
+ .legenda3 {
+   color: #00FA9A;
+   font-size: 15px;
+   text-align: left;
+ }
+
 
  .dashboardtable th,
  .dashboardtable td {
    padding: 8px 12px;
-   border: 1px solid #6A5ACD;
-   border-collapse: collapse;
+   border: 1px solid #191970;
  }
 
  .dashboardtable2 {
-   position: relative;
+   position: static;
    margin-bottom: 10px;
-   right: -60px;
-   top: -20px;
+   top: 10px;
    font-family: 'Franklin Gothic Medium';
-   background-color: aliceblue;
+   background-color: #F8F8FF;
    text-align: left;
-   border-style: double;
-   border-collapse: separate;
-   margin-top: -7px;
+   border-collapse: collapse;
+   margin-top: 5px;
    padding: 10px;
  }
 
  .dashboardtable2 th,
  .dashboardtable2 td {
    padding: 8px 12px;
-   border: 1px solid #6A5ACD;
-   border-collapse: collapse;
+   border: 1px solid #191970;
  }
 
  .dashboardtable,
  .dashboardtable2 {
-   margin-left: 80px;
+   margin-left: 150px;
    width: 80%;
-   transform: scale(0.8);
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ .ectable {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   width: 40%;
+   margin-bottom: 50px;
+ }
+
+
+
+ /* FEEDBACK PAGINA */
+ .feedback,
+ .swot,
+ .programmeren,
+ .studiekeuze,
+ .ictwerkveld {
+   display: block;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   color: #0000CD;
+   padding: 20px;
+   font-size: 30px;
+   margin-top: 50px;
+   margin-left: 210px;
+   width: 70%;
+   background-color: #6A5ACD;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+ }
+
+ .werkcolor {
+   margin-top: 50px;
+ }
+
+ .fbcolor,
+ .swotcolor,
+ .progcolor,
+ .studcolor,
+ .werkcolor {
+   display: block;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   color: #F8F8FF;
+   padding: 20px;
+   font-size: 18px;
+   margin-top: -25px;
+   margin-left: 210px;
+   width: 70%;
+   background-color: #6A5ACD;
+   border-top-left-radius: 0px;
+   border-top-right-radius: 0px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+ }
+
+
+
+ /* FEEDBACK PAGINA */
+ .feedbacktall {
+   text-align: center;
+   font-size: 25px;
+ }
+
+ .feedbacktalijstje {
+   display: block;
+   background-color: #6495ED;
+   padding: 10px;
+   width: 80%;
+   border-radius: 5px;
+   margin-left: 140px;
+ }
+
+ .feedbacklllijstje {
+   display: block;
+   background-color: #6495ED;
+   padding: 10px;
+   width: 80%;
+   border-radius: 5px;
+   margin-left: 140px;
+ }
+
+ .conclusielijstje {
+   display: block;
+   background-color: #6495ED;
+   margin-top: 40px;
+   padding: 10px;
+   width: 80%;
+   border-radius: 5px;
+   margin-left: 140px;
+   margin-bottom: 30px;
+ }
+
+ .feedbackta {
+   font-size: 20px;
+   display: block;
+   text-align: left;
+   border-radius: 5px;
+   width: 450px;
+   margin-left: 40px;
+   background-color: #6495ED;
+ }
+
+ .lijstje3 {
+   text-align: left;
+   width: 90%;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-left: 0px;
+ }
+
+ .flex-container {
+   display: flex;
+   position: static;
+   justify-content: center;
+   margin-left: 150px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   align-items: center;
+   gap: 5px;
+   flex-wrap: wrap;
+   width: 80%;
+ }
+
+ .flex-container img {
+   width: 550px;
+   margin: 10px;
+   object-fit: cover;
+   border-radius: 5px;
+ }
+
+ .feedbackll {
+   font-size: 20px;
+   text-align: left;
+   border-radius: 5px;
+   width: 450px;
+   margin-left: 40px;
+ }
+
+ .lijstje4 {
+   text-align: left;
+   width: 90%;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-left: 0px;
+ }
+
+ .conclusiefeedback {
+   font-size: 20px;
+   text-align: left;
+   border-radius: 5px;
+   width: 450px;
+   margin-left: 40px;
+ }
+
+ .conclusie {
+   text-align: left;
+   width: 90%;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-left: 0px;
+ }
+
+
+
+ /* SWOT PAGINA */
+ table {
+   margin-top: 100px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ table,
+ th,
+ td {
+   border: 1px solid midnightblue;
+   border-collapse: collapse;
+ }
+
+ th,
+ td {
+   background-color: #F8F8FF;
+   padding: 20px;
+ }
+
+ th {
+   font-size: 20px;
+ }
+
+ td p {
+   text-align: left;
+   font-size: 20px;
+ }
+
+ .swottable {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background-color: #F8F8FF;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-bottom: 100px;
+ }
+
+
+
+ /* ICT WERKVELD */
+ .ictwerkveldtitel {
+   margin-top: 50px;
+   margin-bottom: -40px;
+   text-align: center;
+   font-size: 25px;
+ }
+
+ .maxxton-logo {
+   display: block;
+   margin: 60px auto;
+   border-radius: 5px;
+   width: 400px;
+   border: 10px solid orangered;
+ }
+
+ .maxxton {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   display: block;
+   width: 80%;
+   border-radius: 5px;
+   border: 10px solid orangered;
+   padding: 20px;
+   background-color: #F8F8FF;
+   margin-bottom: 60px;
+   margin-left: 120px;
+ }
+
+ .software,
+ .complex,
+ .werken,
+ .trouw {
+   font-size: 18px;
+ }
+
+
+
+ /* STUDIEKEUZE */
+ .activiteit,
+ .motivatie,
+ .nastudie {
+   font-size: 18px
+ }
+
+ .studiekeuzelijstje {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   display: block;
+   width: 60%;
+   border-radius: 10px;
+   border: 10px solid midnightblue;
+   padding: 20px;
+   background-color: #E0FFFF;
+   margin-top: 60px;
+   margin-bottom: 60px;
+   margin-left: 260px;
+ }
+
+
+
+ /* ERVARING */
+ .ervaring,
+ .ervaringtotnu {
+  font-size: 20px;
+  text-align: left;
+ }
+
+ .alervaring {
+  display: block;
+  width: 40%;
+  border: 10px solid midnightblue;
+  border-radius: 10px;
+  padding: 30px;
+  margin-left: 5%;
+  margin-top: 40px;
+  background-color: #98FB98;
+ }
+
+ .ervaringnu {
+  display: block;
+  width: 40%;
+  border: 10px solid midnightblue;
+  border-radius: 10px;
+  padding: 30px;
+  margin-left: 50%;
+  margin-bottom: 40px;
+  background-color: #98FB98;
  }
